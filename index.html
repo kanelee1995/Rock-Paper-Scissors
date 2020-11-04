@@ -37,8 +37,14 @@
         return 1;
       } else if (playerSelection == computerSelection) {
         return 0;
-      } else {
+      } else if (playerSelection == 'ROCK' && computerSelection == 'PAPER') {
         return -1;
+      } else if (playerSelection == 'PAPER' && computerSelection == 'SCISSORS') {
+        return -1;
+      } else if (playerSelection == 'SCISSORS' && computerSelection == 'ROCK') {
+        return -1;
+      } else {
+        alert('Error - Please enter valid words!');
       }
     }
 
@@ -69,17 +75,21 @@
         console.log('You Win this round!');
       } else if (roundOne == 0) {
         console.log('This round is a draw!');
-      } else {
+      } else if (roundOne == -1) {
         console.log('You lose this round!');
+      } else {
+        console.log('Invaild input')
       }
     }
     function showRoundTwoResult() {
       if (roundTwo == 1) {
         console.log('You Win this round!');
-      } else if (roundOne == 0) {
+      } else if (roundTwo == 0) {
         console.log('This round is a draw!');
-      } else {
+      } else if (roundTwo == -1) {
         console.log('You lose this round!');
+      } else {
+        console.log('Invaild input')
       }
     }
     function showRoundThreeResult() {
@@ -87,8 +97,10 @@
         console.log('You Win this round!');
       } else if (roundThree == 0) {
         console.log('This round is a draw!');
-      } else {
+      } else if (roundThree == -1) {
         console.log('You lose this round!');
+      } else {
+        console.log('Invaild input')
       }
     }
     function showRoundFourResult() {
@@ -96,8 +108,10 @@
         console.log('You Win this round!');
       } else if (roundFour == 0) {
         console.log('This round is a draw!');
-      } else {
+      } else if (roundFour == -1) {
         console.log('You lose this round!');
+      } else {
+        console.log('Invaild input')
       }
     }
     function showRoundFiveResult() {
@@ -105,8 +119,10 @@
         console.log('You Win this round!');
       } else if (roundFive == 0) {
         console.log('This round is a draw!');
-      } else {
+      } else if (roundFour == -1) {
         console.log('You lose this round!');
+      } else {
+        console.log('Invaild input')
       }
     }
     }
