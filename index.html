@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+
+  <script>
+
+    function drawNum() {
+      return Math.floor(Math.random() * 3);
+    }
+
+    function computerPlay() {
+      if (drawNum() == 0) {
+        return 'ROCK';
+      } else if (drawNum() == 1) {
+        return 'PAPER';
+      } else {
+        return 'SCISSORS';
+      }
+    }
+
+    function playRound(playerSelection, computerSelection) {
+
+      playerSelection = playerSelection.toUpperCase();
+
+      if (playerSelection == 'ROCK' && computerSelection == 'SCISSORS') {
+        return 1;
+      } else if (playerSelection == 'PAPER' && computerSelection == 'ROCK') {
+        return 1;
+      } else if (playerSelection == 'SCISSORS' && computerSelection == 'PAPER') {
+        return 1;
+      } else if (playerSelection == computerSelection) {
+        return 0;
+      } else {
+        return -1;
+      }
+    }
+
+
+    function game() {
+
+      let roundOne = playRound(prompt('Rock, Paper or Scissors?', ''), computerPlay());
+      showRoundOneResult();
+      roundTwo = playRound(prompt('Rock, Paper or Scissors?', ''), computerPlay());
+      showRoundTwoResult();
+      roundThree = playRound(prompt('Rock, Paper or Scissors?', ''), computerPlay());
+      showRoundThreeResult();
+      roundFour = playRound(prompt('Rock, Paper or Scissors?', ''), computerPlay());
+      showRoundFourResult();
+      roundFive = playRound(prompt('Rock, Paper or Scissors?', ''), computerPlay());
+      showRoundFiveResult();
+
+      if ((roundOne + roundTwo + roundThree + roundFour + roundFive) > 0) {
+        console.log('You win!');
+      } else if ((roundOne + roundTwo + roundThree + roundFour + roundFive) == 0) {
+        console.log('Draw!');
+      } else {
+        console.log('You lose!');
+      }
+      
+    function showRoundOneResult() {
+      if (roundOne == 1) {
+        console.log('You Win this round!');
+      } else if (roundOne == 0) {
+        console.log('This round is a draw!');
+      } else {
+        console.log('You lose this round!');
+      }
+    }
+    function showRoundTwoResult() {
+      if (roundTwo == 1) {
+        console.log('You Win this round!');
+      } else if (roundOne == 0) {
+        console.log('This round is a draw!');
+      } else {
+        console.log('You lose this round!');
+      }
+    }
+    function showRoundThreeResult() {
+      if (roundThree == 1) {
+        console.log('You Win this round!');
+      } else if (roundThree == 0) {
+        console.log('This round is a draw!');
+      } else {
+        console.log('You lose this round!');
+      }
+    }
+    function showRoundFourResult() {
+      if (roundFour == 1) {
+        console.log('You Win this round!');
+      } else if (roundFour == 0) {
+        console.log('This round is a draw!');
+      } else {
+        console.log('You lose this round!');
+      }
+    }
+    function showRoundFiveResult() {
+      if (roundFive == 1) {
+        console.log('You Win this round!');
+      } else if (roundFive == 0) {
+        console.log('This round is a draw!');
+      } else {
+        console.log('You lose this round!');
+      }
+    }
+    }
+
+    game();
+
+
+
+  </script>
+</body>
+
+</html>
