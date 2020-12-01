@@ -1,0 +1,97 @@
+/* reset CSS */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Body */
+
+body {
+  background-image: url(/img/adrien-olichon-u34JNBOIQ10-unsplash.jpg);
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  padding: 000px 300px;
+}
+
+/* container */
+
+#container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  height: 200px;
+}
+
+/* BTN */
+
+.btn {
+  padding: 20px;
+  background-color: #000000;
+  color: orange;
+  font-family: 'Raleway', sans-serif;
+  transition: background-color, color, 0.5s;
+  margin: 10px;
+  opacity: 0.8;
+}
+
+.btn:hover {
+  background-color: #ffffff;
+  color: #202020;
+  cursor: pointer;
+}
+
+/* Main-game */
+
+#main-game {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+/* score board */
+
+#scoreboard {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 250px;
+}
+
+#scoreboard p {
+  transition: 0.3s;
+}
