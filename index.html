@@ -124,21 +124,21 @@
 
       if (score > 0) {
         let para = document.createElement("p");
-        para.innerHTML = `You win! Your won ${score} round.`;
+        para.innerHTML = `You win! Score: ${score} `;
         para.style.color = 'White';
         para.style.padding = '20px';
         para.style.transition = '0.3s';
         document.getElementById("scoreboard").appendChild(para);
       } else if (score == 0) {
         let para = document.createElement("p");
-        para.innerHTML = `Draw! Your won ${score} round.`;
+        para.innerHTML = `Draw!`;
         para.style.color = 'White';
         para.style.padding = '20px';
         para.style.transition = '0.3s';
         document.getElementById("scoreboard").appendChild(para);
       } else if (score < 0) {
         let para = document.createElement("p");
-        para.innerHTML = `You Lose! Your won ${score} round.`;
+        para.innerHTML = `You Lose! Score: ${score} `;
         para.style.color = 'White';
         para.style.padding = '20px';
         para.style.transition = '0.3s';
